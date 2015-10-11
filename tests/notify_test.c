@@ -3,8 +3,10 @@
 void test_notify_addWatch () {
   char testPath[] = "/tmp/foo";
     
-  notify_addWatch ( testPath, IN_ALL_EVENTS );
-  printf ( "Watch added.");
+  if (!notify_addWatch ( testPath, IN_ALL_EVENTS )) {
+    printf ( "Test failed!" );
+  }
+  printf ( "Test passed!");
 }
 
 int main () {
