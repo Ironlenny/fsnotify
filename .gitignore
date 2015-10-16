@@ -1,4 +1,8 @@
 *~
 *.gch
-*.out
 .*
+*.kde*
+CMakeCache.txt
+CMakeFiles
+*.cmake
+Makefile
